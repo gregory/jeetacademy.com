@@ -45,12 +45,12 @@
 #   end
 # end
 
-set :css_dir, 'stylesheets'
+set :css_dir, 'assets/stylesheets'
 
-set :js_dir, 'javascripts'
+set :js_dir, 'assets/javascripts'
 
-set :images_dir, 'images'
-set :fonts_dir, 'fonts'
+set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
 set :build_dir, 'tmp'
 
 activate :directory_indexes
@@ -76,7 +76,7 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  #activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   #activate :relative_assets
