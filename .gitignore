@@ -8,6 +8,7 @@
 /.bundle
 /.cache
 /tmp
+.s3_sync
 
 # Ignore the build directory
 /build
