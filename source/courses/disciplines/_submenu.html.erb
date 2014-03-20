@@ -1,0 +1,7 @@
+<% content_for :submenu do %>
+  <ul id="subnav">
+    <li id="jeetkunedo-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'jeetkunedo'}'" %>><%= link_to "Jeet Kune Do", '/courses/disciplines/jeet_kune_do' %></li>
+    <li id="kali-silat-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'silat'}'" %>><%= link_to "Arts Martiaux Philippins", '/courses/disciplines/silat' %></li>
+    <li id="sanda-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'sanda'}'" %>><%= link_to "Sanda", '/courses/disciplines/sanda' %></li>
+  </ul>
+<% end %>

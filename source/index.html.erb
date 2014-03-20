@@ -1,0 +1,43 @@
+---
+title: Jeet Academy
+homepage: true
+---
+
+<% content_for :header do %>
+  <div class="clear"></div>
+  <ul id="highlight-box">
+    <li class="first">
+      <a href="/courses/disciplines/sanda"><span class="hide molot">Sanda-Sanshou</span></a>
+    </li>
+    <li>
+      <a href="/courses/disciplines/jeet_kune_do"><span class="hide molot">Jeet Kune Do</span></a></li>
+    <li class="last"><a href="/courses/disciplines/silat"><span class="hide molot">Filipino Martial Arts</span></a></li>
+    <span class="pitch-bg"></span>
+    <span class="pitch-shadow"></span>
+  </ul>
+<% end %>
+
+<div class="main-content homepage">
+
+  <div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+
+        <div class="item">
+          <%= image_tag "bruce_lee.52139.jpg" %>
+        </div>
+
+        <div class="item">
+          <%= image_tag "Homepage_3.jpg" %>
+        </div>
+
+        <div class="item active">
+          <%= image_tag "Hompage_2B.jpg" %>
+        </div>
+
+    </div>
+    <div class="mask-carousel"></div>
+    <a class="carousel-control btn left molot" href="#myCarousel" data-slide="prev">‹</a>
+    <a class="carousel-control btn right molot" href="#myCarousel" data-slide="next">›</a>
+  </div>
+</div>
+
