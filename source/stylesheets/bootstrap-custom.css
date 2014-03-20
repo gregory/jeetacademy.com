@@ -21,9 +21,9 @@
   background-image: -moz-linear-gradient(top, rgba(203,151,48, 1), rgba(231,179,76, 1));
   background-image: -webkit-linear-gradient(top, rgba(203,151,48, 1), rgba(231,179,76, 1));
   background-image: -ms-linear-gradient(top, rgba(203,151,48, 1), rgba(231,179,76, 1));
-  background-image: -webkit-gradient(linear,top,color-stop(1, rgba(203,151,48)),color-stop(1, rgba(231,179,76)));
-  -moz-text-shadow: (rgba(255,255,255, 1) 0px 1px 2px);
-  -webkit-text-shadow: (rgba(255,255,255, 1) 0px 1px 2px);
+  background-image: -webkit-gradient(linear,top,color-stop(1, rgb(203,151,48)),color-stop(1, rgb(231,179,76)));
+  -moz-text-shadow: rgba(255, 255, 255, 1) 0px 1px 2px;
+  -webkit-text-shadow: rgba(255,255,255, 1) 0px 1px 2px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border: 1px solid #fecb33;
@@ -38,7 +38,7 @@
   background-image: -moz-linear-gradient(bottom, rgba(203,151,48, 1), rgba(231,179,76, 1));
   background-image: -webkit-linear-gradient(bottom, rgba(203,151,48, 1), rgba(231,179,76, 1));
   background-image: -ms-linear-gradient(bottom, rgba(203,151,48, 1), rgba(231,179,76, 1));
-  background-image: -webkit-gradient(linear,bottom,color-stop(1, rgba(203,151,48)),color-stop(1, rgba(231,179,76)));
+  background-image: -webkit-gradient(linear,bottom,color-stop(1, rgb(203,151,48)),color-stop(1, rgb(231,179,76)));
 }
 
 .carousel-control.right {

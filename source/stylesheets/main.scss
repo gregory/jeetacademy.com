@@ -48,22 +48,22 @@ table {
 
 @font-face {
     font-family: 'Molot';
-    src: font-url('/fonts/Molot-webfont.eot');
-    src: font-url('/fonts/Molot-webfont.eot?#iefix') format('embedded-opentype'),
-         font-url('/fonts/Molot-webfont.woff') format('woff'),
-         font-url('/fonts/Molot-webfont.ttf') format('truetype'),
-         font-url('/fonts/Molot-webfont.svg#Molot') format('svg');
+    src: font-url('Molot-webfont.eot');
+    src: font-url('Molot-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Molot-webfont.woff') format('woff'),
+         font-url('Molot-webfont.ttf') format('truetype'),
+         font-url('Molot-webfont.svg#Molot') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DINLightRegular';
-    src: font-url('/fonts/din-light-webfont.eot');
-    src: font-url('/fonts/din-light-webfont.eot?#iefix') format('embedded-opentype'),
-         font-url('/fonts/din-light-webfont.woff') format('woff'),
-         font-url('/fonts/din-light-webfont.ttf') format('truetype'),
-         font-url('/fonts/din-light-webfont.svg#Din') format('svg');
+    src: font-url('din-light-webfont.eot');
+    src: font-url('din-light-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('din-light-webfont.woff') format('woff'),
+         font-url('din-light-webfont.ttf') format('truetype'),
+         font-url('din-light-webfont.svg#Din') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -133,7 +133,7 @@ body .container {
   border: 1px solid #fecb33;
   text-decoration: none;
   text-shadow: 0px 1px 2px #000000;
-  -moz-text-shadow: (rgba(255,255,255, 1) 0px 1px 2px);
+  -moz-text-shadow: rgba(255,255,255, 1) 0px 1px 2px;
   -webkit-text-shadow: (rgba(255,255,255, 1) 0px 1px 2px);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -383,7 +383,7 @@ ul#languages li a{
   border: 1px solid #3f3f3f;
   text-decoration: none;
   text-shadow: 0px 1px 2px #000000;
-  -moz-text-shadow: (rgba(255,255,255, 1) 0px 1px 2px);
+  -moz-text-shadow: rgba(255,255,255, 1) 0px 1px 2px;
   -webkit-text-shadow: (rgba(255,255,255, 1) 0px 1px 2px);
   display: block;
   float: left;
