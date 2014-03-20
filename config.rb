@@ -51,23 +51,36 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 set :fonts_dir, 'fonts'
+set :build_dir, 'tmp'
 
 activate :directory_indexes
+#activate :automatic_image_sizes
 
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'www.jeetacademy.com' # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = 'eu-west-1'     # The AWS region for your bucket.
+  s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.after_build                = false # We do not chain after the build step by default.
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = 'public-read'
+  s3_sync.encryption                 = false
+end
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  #activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  #activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  #set :http_prefix, "/assets/"
 end
