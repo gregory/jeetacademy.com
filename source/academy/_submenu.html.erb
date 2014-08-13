@@ -1,7 +1,7 @@
 <% content_for :submenu do %>
   <ul id="subnav">
-    <li id="presentation-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'presentation'}'" %>><%= link_to "Presentation", '/academy' %></li>
-    <li id="philosophy-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'philosophy'}'" %>><%= link_to "Philosophie", '/academy/philosophy' %></li>
-    <li id="team-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'team'}'" %>><%= link_to "Team", '/academy/team' %></li>
+    <li id="presentation-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'presentation'}'" %>><%= link_to "Presentation", '/academy/' %></li>
+    <li id="philosophy-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'philosophy'}'" %>><%= link_to "Philosophie", '/academy/philosophy/' %></li>
+    <li id="team-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'team'}'" %>><%= link_to "Team", '/academy/team/' %></li>
   </ul>
 <% end %>

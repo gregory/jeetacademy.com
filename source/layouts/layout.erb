@@ -29,7 +29,7 @@
 /* ]]> */
 </script>
             </a>
-            <%= link_to 'infos', '/courses', title: 'Go to contact page', class: 'btn molot' %>
+            <%= link_to 'infos', '/courses/', title: 'Go to contact page', class: 'btn molot' %>
             <ul id="languages">
               <li><a href="/fr" class="first active molot">Fr</a></li>
               <li><a href="/" class="last molot">En</a></li>
@@ -38,9 +38,9 @@
         </div>
         <h1 id="logo"><a href="/" title="Go to Homepage"><span class="hide din">Jeet academy - Martial Arts Institute</span></a></h1>
         <ul id="main-nav">
-          <li id="academy-link" class=<%= "'link first #{ 'active' if current_page.data.selected_menu == 'academy'}'"%>><%= link_to "Academie", '/academy' %></li>
-          <li id="media-link" class=<%= "'link first #{current_page.data.selected_menu == 'media' ? 'active' : ''}'"%>><%= link_to "Media", '/media' %></li>
-          <li id="courses-link" class=<%= "'link first #{current_page.data.selected_menu == 'courses' ? 'active' : ''}'"%>><%= link_to "Cours", '/courses' %></li>
+          <li id="academy-link" class=<%= "'link first #{ 'active' if current_page.data.selected_menu == 'academy'}'"%>><%= link_to "Academie", '/academy/' %></li>
+          <li id="media-link" class=<%= "'link first #{current_page.data.selected_menu == 'media' ? 'active' : ''}'"%>><%= link_to "Media", '/media/' %></li>
+          <li id="courses-link" class=<%= "'link first #{current_page.data.selected_menu == 'courses' ? 'active' : ''}'"%>><%= link_to "Cours", '/courses/' %></li>
         </ul>
           <%= yield_content :header %>
 
@@ -58,7 +58,6 @@
          <ul class="social-networks">
            <li class="first"><a href="https://www.facebook.com/groups/48884305099/" class="facebook"><span class="hide">Facebook</span></a></li>
            <li><a href="http://www.youtube.com/user/jeetkunedavid/videos" class="youtube"><span class="hide">Youtube</span></a></li>
-           <li class="last"><a href="/" class="rss"><span class="hide">Rss</span></a></li>
          </ul>
        </div>
 
@@ -67,21 +66,11 @@
      <footer>
        <div class="footer-inner container">
          <ul id="footer-nav">
-           <li class="first niv1">
-             <a href="/" class="molot">Home</a>
-             <ul class="sub-footer-nav">
-               <li><a href="/privacy">Privacy policy</a></li>
-               <li><a href="/credits">Credits</a></li>
-               <li><a href="/contact">Contact</a></li>
-             </ul>
-           </li>
            <li class="niv1">
-             <a href="/" class="molot">Academy</a>
+             <a href="/" class="molot">Academie</a>
              <ul class="sub-footer-nav">
                <li><a href="/academy/philosophy">Philosophie</a></li>
                <li><a href="/academy/team">Team</a></li>
-               <li><a href="/academy/stages">Stages</a></li>
-               <li><a href="/academy/people">Vip</a></li>
              </ul>
            </li>
            <li class="niv1">
@@ -91,18 +80,10 @@
                <li><a href="/courses/disciplines">Disciplines</a></li>
              </ul>
            </li>
-           <li class="niv1">
-             <a href="/" class="molot">Events</a>
-             <ul class="sub-footer-nav">
-               <li><a href="/">Seminar</a></li>
-               <li><a href="/">Competitions</a></li>
-             </ul>
-           </li>
            <li class="last niv1">
-             <a href="/" class="molot">Media</a>
+             <a href="/" class="molot">Medias</a>
              <ul class="sub-footer-nav">
-               <li><a href="/media/photos">Photos</a></li>
-               <li><a href="/media/articles">Articles</a></li>
+               <li><a href="/media/livre">Livre</a></li>
                <li><a href="/media/liens">Liens</a></li>
                <li><a href="/media/videos">Videos</a></li>
              </ul>

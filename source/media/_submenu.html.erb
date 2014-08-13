@@ -1,8 +1,7 @@
 <% content_for :submenu do %>
   <ul id="subnav">
-    <li id="articles-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'articles'}'" %>><%= link_to "Articles", '/media/articles' %></li>
-    <li id="liens-link"    class=<%= "'link       #{'active' if current_page.data.selected_submenu == 'links'}'" %>><%= link_to "Liens", '/media/links' %></li>
-    <li id="photos-link"   class=<%= "'link       #{'active' if current_page.data.selected_submenu == 'pictures'}'" %>><%= link_to "Photos", '/media/pictures' %></li>
-    <li id="videos-link"   class=<%= "'link last  #{'active' if current_page.data.selected_submenu == 'videos'}'" %>><%= link_to "Videos", '/media/videos' %></li>
+    <li id="livre-link" class=<%= "'link first #{'active' if current_page.data.selected_submenu == 'livre'}'" %>><%= link_to "Livre", '/media/livre/' %></li>
+    <li id="liens-link"    class=<%= "'link       #{'active' if current_page.data.selected_submenu == 'links'}'" %>><%= link_to "Liens", '/media/links/' %></li>
+    <li class='link last'><a target='_blank' href="http://www.youtube.com/user/jeetkunedavid/videos" class="youtube">Videos</a></li>
   </ul>
 <% end %>

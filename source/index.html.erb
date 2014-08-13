@@ -7,11 +7,20 @@ homepage: true
   <div class="clear"></div>
   <ul id="highlight-box">
     <li class="first">
-      <a href="/courses/disciplines/sanda"><span class="hide molot">Sanda-Sanshou</span></a>
+      <% link_to '/courses/disciplines/sanda/' do %>
+        <span class="hide molot">Sanda-MMA</span>
+      <% end %>
     </li>
     <li>
-      <a href="/courses/disciplines/jeet_kune_do"><span class="hide molot">Jeet Kune Do</span></a></li>
-    <li class="last"><a href="/courses/disciplines/silat"><span class="hide molot">Filipino Martial Arts</span></a></li>
+      <% link_to '/courses/disciplines/jeet_kune_do/' do %>
+        <span class="hide molot">Jeet Kune Do</span>
+      <% end %>
+    </li>
+    <li class="last">
+      <% link_to '/courses/disciplines/silat/' do %>
+        <span class="hide molot">Filipino Martial Arts</span>
+      <% end %>
+    </li>
     <span class="pitch-bg"></span>
     <span class="pitch-shadow"></span>
   </ul>

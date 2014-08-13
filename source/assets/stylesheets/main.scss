@@ -178,6 +178,13 @@ header{
   position: relative;
   z-index: 1;
 }
+ul.links >li > a{
+  color: #A19373;
+  text-decoration: none;
+  &:hover{
+    color: #eaad33;
+  }
+}
 header.homepage{
   height: 592px;
 }
@@ -585,7 +592,13 @@ ul.listing .btn{
   position: relative;
   z-index: 20;
 }
-
+.header-picture-box{
+  display:block;
+  position: relative;
+  margin: 0 20px 20px 0;
+  position: relative;
+  z-index: 20;
+}
 .main-content ul.team{
   margin: 0;
   padding: 0;
