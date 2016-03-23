@@ -1,8 +1,8 @@
 <% content_for :submenu do %>
   <ul id="subnav">
-    <li id="disciplines-link" class="link first"><%= link_to "Disciplines", '/courses/disciplines/' %></li>
-    <li id="infos-link" class="link active last"><%= link_to "Infos", '/courses/' %></li>
-    <li id="private-link" class="link first"><%= link_to "Cours privés", '/courses/disciplines/' %></li>
-    <li id="stages-link" class="link active last"><%= link_to "Stages & formations", '/courses/' %></li>
+    <li id="disciplines-link" class="link first <%= "'link first #{'active' if current_page.data.selected_submenu == 'disciplines'}'" %>>"><%= link_to "Disciplines", '/courses/disciplines/' %></li>
+    <li id="infos-link" class="link <%= "'link first #{'active' if current_page.data.selected_submenu == 'courses'}'" %>>"><%= link_to "Infos", '/courses/' %></li>
+    <li id="private-link" class="link <%= "'link first #{'active' if current_page.data.selected_submenu == 'prive'}'" %>>"><%= link_to "Cours privés & formations", '/courses/prive' %></li>
+    <li id="stages-link" class="link last <%= "'link first #{'active' if current_page.data.selected_submenu == 'stage'}'" %>>"><%= link_to "Stages", '/courses/stage' %></li>
   </ul>
 <% end %>
